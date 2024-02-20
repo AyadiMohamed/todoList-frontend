@@ -1,0 +1,8 @@
+{
+  "name": "data-acesses",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/data-acesses/src",
+  "projectType": "library",
+  "targets": {},
+  "tags": []
+}

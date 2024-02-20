@@ -31,4 +31,4 @@ jobs:
             node_modules
             ~/.cache/Cypress # needed for the Cypress binary
           key: npm-dependencies-${{ hashFiles('pnpm-lock.yaml') }}
-      - run: pnpm nx build react-monorepo
+      - run: pnpm nx build todolist

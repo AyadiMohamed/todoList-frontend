@@ -1,10 +1,10 @@
 /* eslint-disable @nx/enforce-module-boundaries */
 /* eslint-disable no-template-curly-in-string */
-import ICreateTask from "libs/tasks/src/lib/models/ICreateTask";
-import ITask from "libs/tasks/src/lib/models/ITask";
-import IUpdatetask from "libs/tasks/src/lib/models/IUpdateTask";
-import ITaskListing from "libs/tasks/src/lib/models/ITaskListing"
-import {instance} from "libs/utils/src/lib/axios/axios"
+import {ICreateTask} from "@react-monorepo/tasks";
+import {ITask} from "@react-monorepo/tasks";
+import {IUpdatetask} from "@react-monorepo/tasks";
+import {ITaskListing} from "@react-monorepo/tasks"
+import {instance} from "@react-monorepo/utils"
 import getHeader from "./base.service";
 
 export const taskService ={

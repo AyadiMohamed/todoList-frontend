@@ -1,12 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
-import NxWelcome from './nx-welcome';
+import { RouterContext, RouterView } from 'mobx-state-router';
+import { initRouter, viewMap } from './initRouter';
 
 export function App() {
+  const routerStore = initRouter();
   return (
-    <div>
-      <NxWelcome title="todolist" />
-    </div>
+    <RouterContext.Provider value={routerStore}>
+    <RouterView viewMap={viewMap} />
+ </RouterContext.Provider>
   );
 }
 

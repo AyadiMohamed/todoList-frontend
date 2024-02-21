@@ -17,6 +17,7 @@
     "paths": {
       "@react-monorepo/data-acesses": ["libs/data-acesses/src/index.ts"],
       "@react-monorepo/members": ["libs/members/src/index.ts"],
+      "@react-monorepo/shared-ui": ["libs/shared/ui/src/index.ts"],
       "@react-monorepo/tasks": ["libs/tasks/src/index.ts"],
       "@react-monorepo/utils": ["libs/utils/src/index.ts"]
     }

@@ -1,9 +1,10 @@
-import ICreateMember from "libs/members/src/lib/models/ICreateMembe";
-import IMember  from 'libs/members/src/lib/models/IMember';
-import IUpdateMember from "libs/members/src/lib/models/IUpdateMember"
+/* eslint-disable @nx/enforce-module-boundaries */
+import {ICreateMember} from "@react-monorepo/members";
+import {IMember}  from '@react-monorepo/members';
+import {IUpdateMember} from "@react-monorepo/members"
 import getHeader from "./base.service";
-import IMemberListing from "libs/members/src/lib/models/IMemberListing"
-import {instance} from "libs/utils/src/lib/axios/axios"
+import {IMemberListing} from "@react-monorepo/members"
+import {instance} from "@react-monorepo/utils"
 
 export const memberService = {
 
@@ -37,10 +38,10 @@ async function CreateMember(member : ICreateMember) : Promise<IMember | undefine
     return await instance.post('members',member,config)
 }
 //update Task
-async function UpdateMember(id : string ,task : IUpdateMember ): Promise<IMember | undefined> {
+async function UpdateMember(id : string ,member : IUpdateMember ): Promise<IMember | undefined> {
     const headers = getHeader();// header
     const config = { headers: headers };
-    return await instance.put(`members/${id}`,task,config)
+    return await instance.put(`members/${id}`,member,config)
 }
 //delete task
 async function DeleteMember(id : string) : Promise <undefined>{

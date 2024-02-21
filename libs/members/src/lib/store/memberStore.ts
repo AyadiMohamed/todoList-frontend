@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @nx/enforce-module-boundaries */
-import IMember from "../models/IMember";
-import IMemberListing from "../models/IMemberListing";
+import {IMember} from "@react-monorepo/members";
+import {IMemberListing} from "@react-monorepo/members";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import {memberService} from "@react-monorepo/data-acesses"
-import ICreateMember from "../models/ICreateMembe";
-import IUpdateMember from "../models/IUpdateMember";
+import {ICreateMember} from "@react-monorepo/members";
+import {IUpdateMember} from "@react-monorepo/members";
 
 class memberStore{
     
@@ -97,7 +98,7 @@ class memberStore{
         memberService.DeleteMember(id).then(
             (response : any) =>{
                 runInAction(()=>{
-                    if(response.status==200){
+                    if(response.status===200){
                         const index = this.memberListing?.findIndex(item => item.id === id); 
                         if(index !== undefined){
                             this.memberListing?.splice(index, 1);

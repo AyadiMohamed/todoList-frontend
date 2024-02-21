@@ -11,6 +11,9 @@ dependencies:
   mobx:
     specifier: ^6.12.0
     version: 6.12.0
+  mobx-react-router:
+    specifier: 6.0.0-alpha
+    version: 6.0.0-alpha(mobx@6.12.0)(react-router@6.22.1)
   mobx-state-router:
     specifier: ^6.0.1
     version: 6.0.1(mobx-react-lite@4.0.5)(mobx@6.12.0)(react@18.2.0)
@@ -2407,6 +2410,11 @@ packages:
     resolution: {integrity: sha512-HdGqlVbNifHN0DL0kybtfuz3oXKk5B8nTkiZwMtMZGrYPOjw0WmHSLT0ptlyXkPUzIrJoRnazL//L3jHZghaCQ==}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /@remix-run/router@1.15.1:
+    resolution: {integrity: sha512-zcU0gM3z+3iqj8UX45AmWY810l3oUmXM7uH4dt5xtzvMhRtYVhKGOmgOd1877dOPPepfCjUv57w+syamWIYe7w==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@rollup/rollup-android-arm-eabi@4.12.0:
@@ -6342,6 +6350,16 @@ packages:
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
 
+  /mobx-react-router@6.0.0-alpha(mobx@6.12.0)(react-router@6.22.1):
+    resolution: {integrity: sha512-bvYNXKaQNQliNecBHPWbFKW/zhAOp0s3aef1gWl5I7Lqj/NiJ6v7aAvxJFl38Lsh3g7lwwz9n1yOmH+ZcXOLfw==}
+    peerDependencies:
+      mobx: ^6.3.2
+      react-router: ^6.14.2
+    dependencies:
+      mobx: 6.12.0
+      react-router: 6.22.1(react@18.2.0)
+    dev: false
+
   /mobx-state-router@6.0.1(mobx-react-lite@4.0.5)(mobx@6.12.0)(react@18.2.0):
     resolution: {integrity: sha512-tb2FCzb4Owxh6MQ+FkFC6ntJfM0TcOy2UG/3YBcRm/6hLhr42XG+ijOoQydf9C66DY7ihYVzf8LhSHvr8ie4fA==}
     engines: {node: '>=10'}
@@ -6963,6 +6981,16 @@ packages:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /react-router@6.22.1(react@18.2.0):
+    resolution: {integrity: sha512-0pdoRGwLtemnJqn1K0XHUbnKiX0S4X8CgvVVmHGOWmofESj31msHo/1YiqcJWK7Wxfq2a4uvvtS01KAQyWK/CQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.15.1
+      react: 18.2.0
+    dev: false
 
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}

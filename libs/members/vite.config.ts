@@ -12,6 +12,11 @@ export default defineConfig({
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
   // },
+  optimizeDeps: {
+    exclude: [
+      'date-fns'
+    ]
+  },
 
   test: {
     globals: true,

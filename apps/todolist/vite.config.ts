@@ -25,7 +25,7 @@ export default defineConfig({
   // },
 
   build: {
-    outDir: '../../dist/apps/todolist',
+    outDir: './dist/apps/todolist',
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true,

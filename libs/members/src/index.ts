@@ -5,4 +5,4 @@ import IUpdateMember from './lib/models/IUpdateMember';
 import memberStore from './lib/store/memberStore';
 export * from './lib/members';
 
-export {memberStore , IMember , ICreateMember, IUpdateMember , IMemberListing}
+export  {memberStore , IMember , ICreateMember, IUpdateMember , IMemberListing}

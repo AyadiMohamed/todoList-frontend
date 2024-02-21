@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @nx/enforce-module-boundaries */
-import ITask from "../models/ITask";
-import ITaskListing from "../models/ITaskListing";
+import {ITask} from "@react-monorepo/tasks";
+import {ITaskListing} from "@react-monorepo/tasks";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import {taskService} from "@react-monorepo/data-acesses"
-import ICreateTask from "../models/ICreateTask";
-import IUpdatetask from "../models/IUpdateTask";
+import {ICreateTask} from "@react-monorepo/tasks";
+import {IUpdatetask} from "@react-monorepo/tasks";
 
 class taskStore{
 
@@ -94,7 +95,7 @@ class taskStore{
         taskService.DeleteTask(id).then(
             (response : any) =>{
                 runInAction(()=>{
-                    if(response.status==200){
+                    if(response.status===200){
                         const index = this.taskListing?.findIndex(item => item.id === id); 
                         if(index !== undefined){
                             this.taskListing?.splice(index, 1);
@@ -137,7 +138,7 @@ class taskStore{
         this.loading = true;
         taskService.MarkAsCompleted(id).then(
             (response : any) => {
-                if(response.status == 200 ){
+                if(response.status === 200 ){
                     console.log("task marked as complet")
                 }
             }

@@ -29,7 +29,10 @@ export default defineConfig({
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true,
+      esmExternals: true,
+      
     },
+    
   },
 
   test: {

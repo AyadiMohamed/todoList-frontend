@@ -7,8 +7,8 @@ export function App() {
   const routerStore = initRouter();
   return (
     <RouterContext.Provider value={routerStore}>
-    <RouterView viewMap={viewMap} />
- </RouterContext.Provider>
+      <RouterView viewMap={viewMap} />
+    </RouterContext.Provider>
   );
 }
 

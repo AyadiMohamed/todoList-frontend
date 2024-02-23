@@ -1,4 +1,4 @@
-export default interface IMemberListing{
+export interface IMemberListing{
     id : string;
     memberName : string;
     memberEmail : string;

@@ -1,4 +1,4 @@
-export default interface ITaskListing{
+export interface ITaskListing{
     id : string;
     title : string;
     description : string;

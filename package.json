@@ -5,10 +5,12 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "@types/history": "^5.0.0",
     "axios": "^1.6.7",
     "mobx": "^6.12.0",
     "mobx-react-router": "6.0.0-alpha",
     "mobx-state-router": "^6.0.1",
+    "oidc-react": "^3.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tslib": "^2.3.0"

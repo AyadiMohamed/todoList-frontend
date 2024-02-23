@@ -13,6 +13,7 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
       "@react-monorepo/data-acesses": ["libs/data-acesses/src/index.ts"],
@@ -23,4 +24,5 @@
     }
   },
   "exclude": ["node_modules", "tmp"]
+  
 }

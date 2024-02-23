@@ -1,4 +1,4 @@
-export default interface IMember {
+export interface IMember {
     id : string
     memberName : string
     memberEmail : string

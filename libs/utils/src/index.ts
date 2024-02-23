@@ -1,3 +1,1 @@
-import { instance } from './lib/axios/axios';
-export * from './lib/utils';
-export {instance};
+export {instance } from './lib/axios/axios';

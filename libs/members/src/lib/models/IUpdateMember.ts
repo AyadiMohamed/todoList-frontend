@@ -1,5 +1,5 @@
 
-export default interface IUpdateMember{
+export interface IUpdateMember{
     id : string
     memberName : string
     memberEmail : string

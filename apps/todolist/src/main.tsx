@@ -1,15 +1,16 @@
-import * as ReactDOM from 'react-dom/client';
-import App from './app/app';
-import  { StrictMode } from 'react';
+import React from 'react';
 import store, { storeContext } from './store';
+import ReactDOM from "react-dom";
+import App from './app/app';
+import AuthenticationProvider from './common/authenticationContext';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <StrictMode>
-    <storeContext.Provider value={store}> 
-        <App />
+ReactDOM.render(
+  <React.StrictMode>
+    <storeContext.Provider value={store}>
+      <AuthenticationProvider><App /></AuthenticationProvider>
+      
     </storeContext.Provider>
-  </StrictMode>
-);
+  </React.StrictMode>,
+  document.getElementById("root")
+)
+

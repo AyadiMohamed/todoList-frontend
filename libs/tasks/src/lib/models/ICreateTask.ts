@@ -1,4 +1,4 @@
-export default interface ICreateTask {
+export interface ICreateTask {
     id : string;
     title : string;
     description : string;

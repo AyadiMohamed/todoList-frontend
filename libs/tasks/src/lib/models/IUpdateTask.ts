@@ -1,4 +1,4 @@
-export default interface IUpdatetask {
+export interface IUpdatetask {
     id : string;
     title : string;
     description : string;

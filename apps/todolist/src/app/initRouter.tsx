@@ -10,7 +10,10 @@ import HomePage from '../pages/HomePage';
 const notFound = createRouterState('notFound');
 
 export const routes = [
-
+    {
+      name : 'Sign',
+      pattern: '/signin-oidc',
+    },
     {
         name : 'home',
         pattern: '/',

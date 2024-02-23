@@ -6,12 +6,13 @@ import {
 } from 'mobx-state-router';
 import { MembersPage, TasksPage } from '../pages';
 import HomePage from '../pages/HomePage';
+import Sign from '../pages/Sign';
 
 const notFound = createRouterState('notFound');
 
 export const routes = [
     {
-      name : 'Sign',
+      name : 'sign',
       pattern: '/signin-oidc',
     },
     {
@@ -31,6 +32,7 @@ export const routes = [
 ];
 
 export const viewMap = {
+    sign : <Sign/>,
     home : <HomePage/>,
     tasks : <TasksPage/>,
     members : <MembersPage/>,
